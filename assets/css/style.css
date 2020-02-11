@@ -23,7 +23,7 @@ body {
 }
 
 .block {
-  max-width: 80%;
+  max-width: 55%;
   margin: 0 auto;
   background: white;
   overflow: auto;
@@ -57,13 +57,14 @@ p {
   background-color: rgba(102, 102, 102, 0.2);
   border-bottom: solid grey 1px;
   max-width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 5%;
+  height: 10%;
 }
 
 header {
-  max-width: 960px;
+  max-width: 56%;
   margin: 0 auto;
-  height: 76px;
+  height: 45%;
   padding: 0;
 }
 
@@ -75,7 +76,7 @@ nav ul {
   list-style-type: none;
   margin-top: 20px;
   overflow: hidden;
-  padding-right: 10px;
+  /* padding-right: 10px; */
 }
 
 nav li {
@@ -93,6 +94,8 @@ header h1 {
   margin: 0 0 0;
   float: left;
   font-weight: normal;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 nav a {
@@ -111,7 +114,8 @@ header::after {
 }
 
 hr {
-  max-width: 880px;
+  max-width: 72%;
+  margin-left: 5%;
 }
 
 form {
@@ -120,7 +124,7 @@ form {
 }
 
 input {
-  width: 80%;
+  width: 90%;
   height: 25px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -128,7 +132,7 @@ input {
 
 textarea {
   border: solid rgb(227, 227, 227) 1px;
-  width: 80%;
+  width: 90%;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -151,7 +155,7 @@ button:hover {
 
 .category {
   position: relative;
-  width: 300px;
+  width: 40%;
   float: left;
   margin: 20px 0 20px 40px;
 }
@@ -163,10 +167,10 @@ button:hover {
 .category-text {
   background-color: rgba(73, 170, 165, 0.5);
   color: #fff;
-  margin: -30% 0 auto 40px;
+  margin: -35% 0 auto 40px;
   position: relative;
-  height: 40px;
-  width: 300px;
+  height: 4%;
+  width: 46%;
   text-align: center;
 }
 
@@ -175,17 +179,17 @@ button:hover {
 }
 
 h4 {
-  padding-top: 8px;
+  margin-top: -1%;
 }
 
 .grid {
-  width: 720px;
+  width: 90%;
 }
 
 .grid img {
-  width: 300px;
-  height: 200px;
-  margin: 20px 0 20px 40px;
+  width: 100%;
+  height: 30%;
+  padding: 10%;
 }
 
 .footer {
@@ -217,65 +221,23 @@ h4 {
   margin-top: 20px;
 }
 
-/* Media Queries
-  * `index.html`: [980px](Images/980-index.jpg), [768px](Images/768-index.jpg), [640px](Images/640-index.jpg)
-​
-   * `portfolio.html`: [980px](Images/980-portfolio.jpg), [768px](Images/768-portfolio.jpg), [640px](Images/640-portfolio.jpg)
-​
-   * `contact.html`: [980px](Images/980-contact.jpg), [768px](Images/768-contact.jpg), [640px](Images/640-contact.jpg) */
-
-/* @media only screen and (min-width: 640px) {
-  .column {
+@media (min-width: 300px) and (max-width: 639px) {
+  section {
+    width: 80%;
+  }
+  .category {
     width: 100%;
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .column {
-    width: 75%;
+@media (min-width: 640px) and (max-width: 768px) {
+  section {
+    width: 100%;
   }
 }
 
-@media only screen and (min-width: 980px) {
-  .column {
-    width: 50%;
-  }
-} */
-
-/* @media (min-width: 300px) and (max-width: 640px) {
-  .block h1 {
-    min-width: 300px;
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 641px) and (max-width: 768px) {
-  .block h1 {
-    min-width: 641px;
-    max-width: 768px;
-  }
-}
 @media (min-width: 769px) and (max-width: 980px) {
-  .block h1 {
-    min-width: 769px;
-    max-width: 980px;
-  }
-} */
-
-@media screen and (max-width: 640px) {
   section {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  section {
-    width: 80%x;
-  }
-}
-
-@media screen and (max-width: 980px) {
-  section {
-    width: 80%;
+    width: 100%;
   }
 }
